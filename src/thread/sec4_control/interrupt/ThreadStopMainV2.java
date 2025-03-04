@@ -14,6 +14,8 @@ public class ThreadStopMainV2 {
 
         ThreadUtils.sleep(4000); // t1 이 작업하는 모습 출력을 위함
         log("작업 중단 지시 Thread.interrupt 로 지시");
+        t1.interrupt(); // Interrupt 상태로 전환. T1 이 WAITING / TIMED_WAITING 으로 전환될 시 Interrupt 를 발생시킨다
+        log("work 스레드 interrupt 상태1 = " + t1.isInterrupted());
 
     }
 
@@ -22,7 +24,7 @@ public class ThreadStopMainV2 {
         @Override
         public void run() {
             try {
-                while (runFlag) {
+                while (true) {
                     log("Task 작업 중");
                     Thread.sleep(3000);
                 }
