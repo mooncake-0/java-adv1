@@ -4,6 +4,9 @@ import thread.util.ThreadUtils;
 
 import static thread.util.MyLogger.log;
 
+/*
+ interrupt() 를 사용하여 즉각적인 반영이 이루어질 수 있다 - 하지만 Thread 가 WAITING / TIMED_WAITING 으로의 전환이 있어야 한다는 한계
+ */
 public class ThreadStopMainV2 {
 
     public static void main(String[] args) {

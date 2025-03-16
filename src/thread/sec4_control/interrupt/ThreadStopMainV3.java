@@ -4,6 +4,9 @@ import thread.util.ThreadUtils;
 
 import static thread.util.MyLogger.log;
 
+/*
+ 상태전환이 없더라도 interrupt 여부를 반환받을 수 있다 - 하지만 interrupt 의 상태를 전환시켜주지 못한다 (interrupt = true 유지)
+ */
 public class ThreadStopMainV3 {
 
     public static void main(String[] args) {

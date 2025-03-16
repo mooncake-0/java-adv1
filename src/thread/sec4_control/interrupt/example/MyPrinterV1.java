@@ -51,6 +51,7 @@ public class MyPrinterV1 {
 //            while (work) {
             while(!Thread.interrupted()){
                 if (jobQueue.isEmpty()) { // job queue 가 비어있으면 while 문을 반복
+                    Thread.yield(); // 차라리 다른 스레드가 수행되는게 맞다. 하지만 Sleep 까지 걸어주고 싶진 않을 때 -> 다른 스레드드를 먼저 넣어줌
                     continue;
                 }
 

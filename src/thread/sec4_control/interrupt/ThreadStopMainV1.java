@@ -5,6 +5,7 @@ import thread.util.ThreadUtils;
 
 import static thread.util.MyLogger.*;
 
+// interrupt 가 필요한 이유 - runFlag = false (작업 중지 명령) 로 하면 다시 이 flag 를 확인할 때까지 스레드가 자신이 중지해야 하는 상황인 것을 인지하지 못한다
 public class ThreadStopMainV1 {
 
     public static void main(String[] args) {

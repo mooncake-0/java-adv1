@@ -4,6 +4,8 @@ import thread.util.ThreadUtils;
 
 import static thread.util.MyLogger.log;
 
+
+// 완성
 public class ThreadStopMainV4 {
 
     public static void main(String[] args) {
