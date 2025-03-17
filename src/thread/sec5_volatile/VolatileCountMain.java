@@ -18,6 +18,7 @@ public static void main(String[] args) {
 static class MyTask implements Runnable {
     volatile boolean flag = true;
     volatile long count;
+
     @Override
     public void run() {
         while (flag) {
