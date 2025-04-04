@@ -3,6 +3,7 @@ package thread.sec7_concurrent;
 import thread.util.MyLogger;
 import thread.util.ThreadUtils;
 
+import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.LockSupport;
 
 import static thread.util.MyLogger.*;
