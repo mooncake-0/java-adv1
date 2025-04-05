@@ -12,7 +12,7 @@ public class BankMain {
     public static void main(String[] args) throws InterruptedException {
 
 //        BankAccount account = new BankAccountV1(1000);
-        BankAccount account = new BankAccountV4(1000);
+        BankAccount account = new BankAccountV6(1000);
 
         // 악의적인 유저의 동시 출금 시도
         Thread t1 = new Thread(new WithdrawTask(account, 800), "w-t1");
