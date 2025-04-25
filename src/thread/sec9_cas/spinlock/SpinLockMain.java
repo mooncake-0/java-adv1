@@ -1,6 +1,7 @@
 package thread.sec9_cas.spinlock;
 
 import thread.util.MyLogger;
+import thread.util.ThreadUtils;
 
 import static thread.util.MyLogger.*;
 
@@ -15,6 +16,7 @@ public class SpinLockMain {
                 spinLock.lock();
                 try {
                     // 임계 영역
+                    ThreadUtils.sleep(1);
                     log("비즈니스 로직 실행");
                 } finally { // 무조건 반환을 위함
                     spinLock.unlock();
