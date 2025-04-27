@@ -1,4 +1,4 @@
-package thread.sec10_동시성컬렉션.simple;
+package thread.sec10_동시성컬렉션.a_simple;
 
 public interface SimpleList {
     int size();

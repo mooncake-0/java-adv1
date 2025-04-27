@@ -1,15 +1,12 @@
-package thread.sec10_동시성컬렉션.simple;
-
-import thread.sec4_control.interrupt.ThreadStopMainV1;
-import thread.util.MyLogger;
+package thread.sec10_동시성컬렉션.a_simple;
 
 import static thread.util.MyLogger.*;
 
 public class SimpleListMainV1 {
 
     public static void main(String[] args) throws InterruptedException {
-//        test(new BasicList());
-        test(new SyncList());
+//        test(new BasicList()); // 동기화 오류남
+        test(new SyncList());  // 정상 동작
     }
 
     private static void test(SimpleList list) throws InterruptedException {

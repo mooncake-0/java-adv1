@@ -1,4 +1,4 @@
-package thread.sec10_동시성컬렉션.simple;
+package thread.sec10_동시성컬렉션.a_simple;
 
 import java.util.Arrays;
 
@@ -20,7 +20,6 @@ public class SyncList implements SimpleList{
     public int size() {
         return this.size;
     }
-
 
     @Override
     public synchronized void add(Object obj) {

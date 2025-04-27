@@ -1,6 +1,4 @@
-package thread.sec10_동시성컬렉션.simple;
-
-import thread.util.ThreadUtils;
+package thread.sec10_동시성컬렉션.a_simple;
 
 import java.util.Arrays;
 
